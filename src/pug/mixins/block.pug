@@ -1,0 +1,18 @@
+- const fs = require('fs')
+
+mixin b
+  - const classes = attributes.class.split(' ')
+  - const blockName = classes[0]
+  - const dataFilePath = `./src/blocks/${blockName}/data.json`
+  
+  - let data = {}
+  - try {
+  -   fs.accessSync(dataFilePath, fs.constants.R_OK)
+  -   const fileData = fs.readFileSync(dataFilePath, 'utf-8')
+  -   data = JSON.parse(fileData)
+  - } catch (error) {
+  -   console.log(error)
+  - }
+
+  +#{blockName}(data)(class=`${classes.join(' ')}`)
+    block

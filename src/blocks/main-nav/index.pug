@@ -1,0 +1,20 @@
+mixin main-nav(data)
+	- const className = attributes.class
+
+	nav(class=className)
+		button.hamburger.hamburger--collapse(type="button")
+			span.hamburger-box
+				span.hamburger-inner
+		ul(class=`${className}__list`)
+			each menuItem in data
+				li(class=`${className}__item`)
+					a(class=`${className}__link` href=menuItem.href)
+						| #{menuItem.title}
+						if menuItem.list
+							svg(width="16" height="16").arrow-icon
+								use(xlink:href=require('main-nav/img/arrow-down.svg').symbol)
+					if menuItem.list
+						ul(class=`${className}__sublist`)
+							each submenuItem in menuItem.list
+								li(class=`${className}__subitem`)
+									a(class=`${className}__sublink` href=submenuItem.href) #{submenuItem.title}

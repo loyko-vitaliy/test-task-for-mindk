@@ -1,0 +1,55 @@
+.intro {
+  background-color: $white;
+  background-image: url('img/intro.jpg');
+  background-size: cover;
+  background-position: right center;
+  min-height: 398px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+  position: relative;
+
+  @include retina2x {
+    background-image: url('img/intro@2x.jpg');
+  }
+
+  @include retina3x { 
+    background-image: url('img/intro@3x.jpg');
+  }
+
+  @include media-breakpoint-down(lg) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($white, .5);
+    }
+  }
+}
+
+.intro__title {
+  font-weight: 600;
+  font-size: 42px;
+  color: $dark-blue;
+  margin-bottom: 25px;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+}
+
+.intro__description {
+  font-weight: 400;
+  font-size: 18px;
+  color: $dark-blue;
+  margin: 0;
+
+  @include media-breakpoint-down(xs) {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,14 @@
+.logo__link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo__icon {
+  fill: $dark-blue;
+  transition: fill .25s ease;
+
+  &:hover {
+    fill: $light-blue;
+  }
+}

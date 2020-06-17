@@ -1,0 +1,31 @@
+body {
+  background-color: $white;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+
+  font-size: 16px;
+  font-family: $default-font;
+  font-style: normal;
+  line-height: 1.4;
+
+  &.locked {
+    overflow: hidden;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:focus,
+select:focus,
+button:focus {
+  outline: $dark-blue dashed 2px;
+  border-color: transparent;
+}

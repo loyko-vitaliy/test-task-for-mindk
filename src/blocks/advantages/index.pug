@@ -1,0 +1,24 @@
+mixin advantages(data)
+	- const className = attributes.class
+	
+
+	section(class=className)
+		.container
+			.row.align-items-center
+				.col-12.col-md-6
+					div(class="section__img-container")
+						img(
+							class="info__img"
+							src=require('advantages/img/advantages.jpg').default
+							srcset=`${require('advantages/img/advantages@2x.jpg').default} 2x,
+											${require('advantages/img/advantages@3x.jpg').default} 3x`
+							alt="advantages"
+						)
+				.col-12.col-md-6
+					div(class="section__text")
+						b(class="section__label") Know who lives at your home with
+						h2(class="section__title") Tenant screening service
+						p(class="section__description")
+							| Tenant Screening is a service that allows you to Lorem usce volutpat lectus justo,
+							| ut suscipit felis congue ut. Vivamus ut ultricies ante dictum. 
+						a(class="section__button" href="#") Try it 

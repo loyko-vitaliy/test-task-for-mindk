@@ -1,0 +1,5 @@
+@mixin retina3x {
+  @media (min-resolution: 216dpi), (min-resolution: 2.5dppx) {
+    @content;
+  }
+}

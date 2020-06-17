@@ -1,0 +1,8 @@
+mixin copyright(data)
+	- const className = attributes.class
+
+	div(class=className)
+		.container
+			div(class=`${className}__container`)
+				span(class=`${className}__text`) Copyright © 2020 Apartment Owners Association. All Rights Reserved. 
+				a(class=`${className}__link` href="#") Privacy Policy

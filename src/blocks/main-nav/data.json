@@ -1,0 +1,32 @@
+[
+  {
+    "title": "About us",
+    "href": "#"
+  },
+  {
+    "title": "membership",
+    "href": "#",
+    "list": [
+      {
+        "title": "sign in",
+        "href": "#"
+      },
+      {
+        "title": "sign up",
+        "href": "#"
+      }
+    ]
+  },
+  {
+    "title": "services",
+    "href": "#"
+  },
+  {
+    "title": "NEWS AND EVENTS",
+    "href": "#"
+  },
+  {
+    "title": "СONTACT",
+    "href": "#"
+  }
+]

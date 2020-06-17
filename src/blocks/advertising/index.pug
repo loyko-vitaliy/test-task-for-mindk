@@ -1,0 +1,23 @@
+mixin advertising(data)
+	- const className = attributes.class
+
+	section(class=className)
+		.container
+			.row.align-items-center
+				.col-12.order-2.col-md-6.order-md-1
+					div(class="section__text")
+						b(class="section__label") Make your business grow with
+						h2(class="section__title") Advertising
+						p(class="section__description")
+							| Wide selection of advertising oportunities like Lorem usce volutpat lectus justo, ut suscipit
+							| felis congue ut. Vivamus ut ultricies ante dictum. 
+						a(class="section__button" href="#") Learn more
+				.col-12.order-1.col-md-6.order-md-2
+					div(class="section__img-container section__img-container--reverse")
+						img(
+							class="info__img"
+							src=require('advertising/img/advertising.jpg').default
+							srcset=`${require('advertising/img/advertising@2x.jpg').default} 2x,
+											${require('advertising/img/advertising@3x.jpg').default} 3x`
+							alt="advertising"
+						)

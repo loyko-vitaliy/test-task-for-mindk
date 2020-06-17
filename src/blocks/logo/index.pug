@@ -1,0 +1,6 @@
+mixin logo()
+	- const className = attributes.class
+	div(class=`navbar-brand ${className}`)
+		a(href="/" class=`${className}__link`)
+			svg(width="196" height="40" class=`${className}__icon`)
+				use(xlink:href=require('logo/img/logo.svg').symbol) 

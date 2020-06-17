@@ -1,0 +1,25 @@
+mixin agents(data)
+	- const className = attributes.class
+	sections(class=className)
+		.container
+			h2(class="section__title") Our agents
+			table(class=`${className}__table`)
+				thead
+					tr
+						td Navn
+						td Company
+						td Level
+						td Deals Closed
+						td State
+						td Phone
+						td Email
+				tbody
+					each row in data
+						tr
+							td(data-label="Navn") #{row.navn}
+							td(data-label="Company") #{row.company}
+							td(data-label="Level") #{row.level}
+							td(data-label="Deals Closed") #{row.dealsClosed}
+							td(data-label="State") #{row.state}
+							td(data-label="Phone") #{row.phone}
+							td(data-label="Email") #{row.email}

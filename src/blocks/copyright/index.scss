@@ -1,0 +1,28 @@
+.copyright__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__text,
+.copyright__link {
+  color: $white;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 14px;
+  }
+}
+
+.copyright__link {
+  text-decoration: underline;
+  transition: color .25s ease;
+
+  &:hover,
+  &:focus {
+    color: $light-blue;
+  }
+}
