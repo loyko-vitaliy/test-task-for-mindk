@@ -18,8 +18,18 @@
 }
 
 .copyright__link {
-  text-decoration: underline;
+  position: relative;
   transition: color .25s ease;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: $white;
+    height: 1px;
+  }
 
   &:hover,
   &:focus {
