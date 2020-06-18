@@ -7,7 +7,7 @@ mixin main-nav(data)
 				span.hamburger-inner
 		ul(class=`${className}__list`)
 			each menuItem in data
-				li(class=`${className}__item`)
+				li(class=`${className}__item ${menuItem.list && className + '__item--dropdown'}`)
 					a(class=`${className}__link` href=menuItem.href)
 						| #{menuItem.title}
 						if menuItem.list
