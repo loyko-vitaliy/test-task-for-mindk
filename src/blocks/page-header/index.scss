@@ -1,4 +1,9 @@
 .page-header {
-  z-index: 100;
+  min-height: 80px;
   background-color: $white;
+  z-index: 100;
+
+  @include media-breakpoint-down(lg) {
+    min-height: 74px;
+  }
 }
