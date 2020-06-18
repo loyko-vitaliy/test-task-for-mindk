@@ -1,3 +1,5 @@
+import Sticky from 'sticky-js'
+
 const hamburger = document.querySelector('.hamburger')
 const menu = document.querySelector('.main-nav__list')
 
@@ -14,3 +16,6 @@ document.addEventListener('click', event => {
     document.body.classList.toggle('locked')
   }
 })
+
+// Sticky menu
+new Sticky('.navbar')

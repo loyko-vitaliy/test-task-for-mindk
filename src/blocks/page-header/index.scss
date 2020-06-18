@@ -1,13 +1,4 @@
 .page-header {
-  padding: {
-    top: 20px;
-    bottom: 20px;
-  };
-
-  @include media-breakpoint-down(md) {
-    padding: {
-      top: 10px;
-      bottom: 10px;
-    };
-  }
+  z-index: 100;
+  background-color: $white;
 }

@@ -1,1 +1,15 @@
-.navbar {}
+.navbar {
+  background-color: $white;
+  padding: {
+    top: 20px;
+    bottom: 20px;
+  };
+  box-shadow: 0 0 8px rgba($dark-blue, .5);
+
+  @include media-breakpoint-down(md) {
+    padding: {
+      top: 10px;
+      bottom: 10px;
+    };
+  }
+}
