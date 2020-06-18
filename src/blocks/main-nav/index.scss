@@ -38,7 +38,7 @@ $hamburger-layer-color: $dark-blue;
       left: 20px;
       right: 20px;
     };
-    box-shadow: 0 0 5px rgba($black, .5);
+    box-shadow: 0 0 5px rgba($dark-blue, .5);
     width: 230px;
     transform: translateX(-300px);
     transition: transform .2s ease;
@@ -79,7 +79,6 @@ $hamburger-layer-color: $dark-blue;
 
     .main-nav__link {
       color: $light-blue;
-      text-decoration: underline;
     }
 
     .arrow-icon {
